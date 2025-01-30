@@ -1,16 +1,12 @@
-package com.scaler.bookmyshow.models;
+package com.scaler.bookmyshow.dtos;
 
-import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
-@Entity(name = "users")
-public class User extends BaseModel {
+public class UserRequestDto {
     private String name;
     private String email;
-    private String password;
+    private String passowrd;
 
     public String getName() {
         return name;
@@ -28,11 +24,11 @@ public class User extends BaseModel {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPassowrd() {
+        return passowrd;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassowrd(String passowrd) {
+        this.passowrd = passowrd;
     }
 }

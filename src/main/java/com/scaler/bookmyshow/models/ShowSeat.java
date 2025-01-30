@@ -22,4 +22,36 @@ public class ShowSeat extends BaseModel {
     private ShowSeatStatus showSeatStatus;
 
     private Date lockedAt;
+
+    public Show getShow() {
+        return show;
+    }
+
+    public void setShow(Show show) {
+        this.show = show;
+    }
+
+    public Seat getSeat() {
+        return seat;
+    }
+
+    public void setSeat(Seat seat) {
+        this.seat = seat;
+    }
+
+    public ShowSeatStatus getShowSeatStatus() {
+        return showSeatStatus;
+    }
+
+    public void setShowSeatStatus(ShowSeatStatus showSeatStatus) {
+        this.showSeatStatus = showSeatStatus;
+    }
+
+    public Date getLockedAt() {
+        return lockedAt;
+    }
+
+    public void setLockedAt(Date lockedAt) {
+        this.lockedAt = lockedAt;
+    }
 }

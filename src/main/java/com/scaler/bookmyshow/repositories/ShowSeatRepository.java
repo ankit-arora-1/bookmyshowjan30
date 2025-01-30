@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ShowSeatRepository extends JpaRepository<ShowSeat, Long> {
-    List<ShowSeat> findAllById(List<Long> showSeatIds);
+    //List<ShowSeat> findAllById(List<Long> showSeatIds);
 }
