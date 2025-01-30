@@ -27,6 +27,4 @@ public class Booking extends BaseModel {
 
     @OneToMany
     private List<Payment> payments;
-
-    // Break for 6 minutes: 8:20 -> 8:26
 }
